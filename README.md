@@ -83,6 +83,7 @@ RAM : 32 GB
 #### Process Visualization
 
 **1. Grayscale**
+
    ![alt text](assets/OpenCV/1.jpg)     ![alt text](assets/OpenCV2/1.jpg)
 
 - RGB 3채널 이미지를 단일 채널의 Grayscale 이미지로 변환
