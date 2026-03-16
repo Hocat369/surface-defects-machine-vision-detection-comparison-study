@@ -21,7 +21,7 @@
 ## 2. Project Structure
 
 ```
-Defects_Detection_Demo
+surface-defects-machine-vision-detection-comparison-study
 ├─01_OpenCV_Defects_Detection\   
 │  ├─NEU-DET\                                    # NEU-DET 데이터셋
 │  └─opencv_surface_defect_detection_test.py     # Rule-based 결함 탐지 테스트 코드
