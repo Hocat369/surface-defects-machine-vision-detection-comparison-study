@@ -1,0 +1,12 @@
+# 1. 학습 및 검증 이미지 폴더 경로
+train:
+  - NEU-DET_modified\train\images
+
+val:
+  - NEU-DET_modified\validation\images
+
+# 2. Defects 종류 개수
+nc: 6
+
+# 3. Defects 이름 리스트
+names: ['crazing', 'inclusion', 'patches','pitted_surface','rolled-in_scale','scratches']
