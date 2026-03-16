@@ -28,9 +28,9 @@ Defects_Detection_Demo
 ├─02_YOLO_Defects_Detection\
 │  ├─NEU-DET_modified\                           # YOLO 학습 구조로 변환한 NEU-DET 데이터셋
 │  ├─runs\detect\result_model\Wights\
-│  │  └─best.pt                                  # 학습 완료 후 YOLO 모델
+│  │  └─best.pt                                  # 학습 결과 가중치
 │  ├─convert_xml_to_yolo.py                      # NEU-DET의 XML데이터셋 TXT 변환 스크립트
-│  ├─data.yaml                                   # 학습 및 검증 이미지 폴더 경로 및 객체 갯수와 라벨 설정
+│  ├─data.yaml                                   # 클래스 정의 및 데이터 경로 설정 파일
 │  ├─train_yolo.py                               # YOLO 모델 학습 코드
 │  └─yolo_surface_defect_detection_test.py       # 학습완료 YOLO 모델을 통한 결함 탐지 테스트 코드
 ├─assets\
@@ -178,7 +178,7 @@ RAM : 32 GB
 
 **2. Model Training**
 
-- `data.yaml` 에서 학습 및 검증 이미지 폴더 경로 및 객체 갯수와 라벨 설정
+- `data.yaml` 에서 클래스 정의 및 데이터 경로 설정
 - `train_yolo.py`에서 `epochs`, `imgsz`, `batch` 값 설정 & 실행
 
   ```
