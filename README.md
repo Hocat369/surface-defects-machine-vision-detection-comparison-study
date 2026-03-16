@@ -90,6 +90,7 @@ RAM : 32 GB
 - 데이터 크기를 줄여 연산 효율을 향상
 
 **2. Blurring**
+
    ![alt text](assets/OpenCV/2.jpg)     ![alt text](assets/OpenCV2/2.jpg)
 
 - 실제 공장에서는 조명 난반사, 렌즈의 먼지, 금속 표면의 미세한 질감 등으로 자잘한 노이즈 발생
@@ -97,11 +98,13 @@ RAM : 32 GB
 - 주변 픽셀값들을 평균화; 해당 테스트에서는 Gaussian Blur (가중 평균화) 적용
 
 **3. Sharpening**
+
    ![alt text](assets/OpenCV/3.jpg)     ![alt text](assets/OpenCV2/3.jpg)
 
 - 중앙 픽셀을 강화 & 주변 픽셀 약화로 결함 영역과 배경의 대비(contrast)를 강화
 
 **4. Thresholding**
+
    ![alt text](assets/OpenCV/4.jpg)     ![alt text](assets/OpenCV2/4.jpg)
 
 - 임계값을 통해 결함을 흰색(255), 배경을 검은색(0)으로 이진화
@@ -109,6 +112,7 @@ RAM : 32 GB
 - Adaptive Thresholding 통해 일정 크기의 블럭 내부의 픽셀값 분포로부터 임계값을 자동으로 설정
 
 **5. Morphology**
+
    ![alt text](assets/OpenCV/5.jpg)     ![alt text](assets/OpenCV2/5.jpg)
 
 - 결함들을 하나의 결함 영역으로 병합
@@ -121,6 +125,7 @@ RAM : 32 GB
   - 이후 Erosion으로 영역을 원래 크기로 복구
 
 **6. Contour & Bounding Box (Detection)**
+
    ![alt text](assets/OpenCV/6.jpg)     ![alt text](assets/OpenCV2/6.jpg)
 
 - **Contour detection**을 통해 결함 외곽선을 추출
