@@ -193,7 +193,7 @@ RAM : 32 GB
 
 | Scratches                                                 | Crazing                                                                   |
 | --------------------------------------------------------- | ------------------------------------------------------------------------- |
-| ![alt text](assets/YOLO/2.jpg) ![alt text](assets/YOLO/1.jpg) | ![alt text](assets/YOLO/crazing_1.jpg) ![alt text](assets/YOLO/crazing_2.jpg) |
+| ![alt text](assets/YOLO/2.jpg)![alt text](assets/YOLO/1.jpg) | ![alt text](assets/YOLO/crazing_1.jpg) ![alt text](assets/YOLO/crazing_2.jpg) |
 
 | Inclusion                                                                     | Patches                                                                   |
 | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
