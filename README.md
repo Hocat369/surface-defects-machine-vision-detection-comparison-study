@@ -58,7 +58,7 @@ https://www.kaggle.com/datasets/kaustubhdikshit/neu-surface-defect-database
 
 ## 4. 검출 접근 방식 (Approaches)
 
-### Approach 1: Rule-based 영상처리(OpenCV)
+### 4.1. Approach 1: Rule-based 영상처리(OpenCV)
 
 OpenCV 라이브러리를 활용하여 이미지 변환, 필터링, 이진화 등의 전통적인 영상처리 기법을 적용하여 결함 영역을 탐지하였다.
 
@@ -143,7 +143,7 @@ RAM : 32 GB
  평균 FPS: 1981.56 FPS
 ```
 
-### Approach 2: CNN-based 객체 인식 AI (모델명: YOLO)
+### 4.2. Approach 2: CNN-based 객체 인식 AI (모델명: YOLO)
 
 정제된 데이터를 기반으로 CNN 기반 객체 인식 AI 모델인 YOLO를 학습시켜 표면 결함의 특징을 자동으로 학습하고 검출하는 방식이다.
 모델은 이미지로부터 결함의 형태, 패턴, 질감 등의 특징(feature)을 학습하여 결함 위치를 탐지한다.
