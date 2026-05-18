@@ -6,9 +6,11 @@
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
 ![YOLO](https://img.shields.io/badge/YOLO-00FFFF?style=for-the-badge&logo=YOLO&logoColor=black)
 
+---
+
 ## 1. 개요
 
-본 프로젝트는 공개 데이터셋인 NEU-DET을 활용하여 금속 표면 결함을 자동으로 검출하는 **비전 시스템의 원리를 이해하고 구현**하는 것을 목표로 한다.
+공개 데이터셋인 NEU-DET을 활용하여 금속 표면 결함을 자동으로 검출하는 **비전 시스템의 원리를 이해하고 구현**하는 것을 목표로 하는 스터디 프로젝트이다.
 
 이를 위해 다음 두 가지 접근 방식을 구현하였다.
 
@@ -17,6 +19,8 @@
 
 두 방식에 대해 결함 검출 메커니즘과 처리 속도(FPS)를 비교하였으며, 산업 현장에서의 적용 관점에서 결과를 분석하였다.
 정확도 평가는 데이터셋 특성상 정량적 지표보다는 정성적 결과 분석을 중심으로 수행하였다.
+
+---
 
 ## 2. Project Structure
 
@@ -37,6 +41,8 @@ surface-defects-machine-vision-detection-comparison-study
 └─README.md
 ```
 
+---
+
 ## 3. 데이터셋: NEU-DET
 
 강판 표면 결함 검출 실험을 위해 **NEU-DET** (Northeastern University Surface Defect Database) 공개 데이터셋을 활용하였다
@@ -55,6 +61,8 @@ https://www.kaggle.com/datasets/kaustubhdikshit/neu-surface-defect-database
 | Pitted Surface                          | Rolled-in Scale                          | Scratches                          |
 | --------------------------------------- | ---------------------------------------- | ---------------------------------- |
 | ![alt text](assets/pitted_surface_92.jpg) | ![alt text](assets/rolled-in_scale_82.jpg) | ![alt text](assets/scratches_27.jpg) |
+
+---
 
 ## 4. 검출 접근 방식 (Approaches)
 
@@ -214,6 +222,8 @@ RAM : 32 GB
  평균 FPS: 45.81 FPS
 ```
 
+---
+
 ## 5. Analysis
 
 ### System Comparison
@@ -241,6 +251,8 @@ RAM : 32 GB
 **Learning outcomes**
 
 본 프로젝트를 통해 이미지 전처리, 필터링, 형태학적 연산(Morphology) 등 전통적인 비전 파이프라인을 직접 구현함으로써 컴퓨터 비전 시스템이 이미지를 처리하고 해석하는 기본 원리를 이해할 수 있었다. 또한 전통적인 영상처리 방식과 객체 인식 AI 방식의 차이를 실험적으로 비교함으로써 문제 특성에 맞는 비전 시스템 설계의 중요성을 확인하였다.
+
+---
 
 ## 7. Future Work
 
