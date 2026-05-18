@@ -1,6 +1,6 @@
 # Rule-based 비전과 AI 비전의 표면 결함 검출 비교 스터디
 
-# Comparative Study of Surface Defect Detection with Traditional Vision and AI Vision
+### Comparative Study of Surface Defect Detection with Traditional Vision and AI Vision
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
@@ -224,7 +224,7 @@ RAM : 32 GB
 
 ---
 
-## 6. Analysis
+## 6. 분석
 
 ### System Comparison
 
@@ -236,7 +236,7 @@ RAM : 32 GB
 | **강건성 / Robustness**                    | - 새로운 결함 유형이나 환경 변화에 대한 일반화 능력이 낮기에 환경 변화시 검출 성능이 크게 변할 수 있음 | - 다양한 데이터 학습을 통해 조명 변화, 반사, 노이즈 등 복잡한 환경에서도 비교적 안정적인 검출 가능                 |
 | **도입 비용 / Deployment Cost**            | - 별도의 학습 과정이 필요 없으며 일반 CPU 환경에서도 동작 가능하여 초기 구축 비용이 낮음               | - 모델 학습을 위한 GPU 자원, 데이터 라벨링, 추론 환경 구축 등 초기 비용이 상대적으로 높음                          |
 
-## 7. Conclusion
+## 7. 결론
 
 해당 프로젝트에서는 전통적인 Rule-based 영상처리 방식과 CNN-based 객체 인식 AI 방식을 각각 구현하고 성능을 비교 분석하였다. 실험 결과 다음과 같은 결론을 도출할 수 있었다.
 
