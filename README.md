@@ -64,13 +64,11 @@ https://www.kaggle.com/datasets/kaustubhdikshit/neu-surface-defect-database
 
 ---
 
-## 4. 검출 접근 방식 (Approaches)
-
-### 4.1. Approach 1: Rule-based 영상처리(OpenCV)
+## 4. Approach 1: Rule-based 영상처리(OpenCV)
 
 OpenCV 라이브러리를 활용하여 이미지 변환, 필터링, 이진화 등의 전통적인 영상처리 기법을 적용하여 결함 영역을 탐지하였다.
 
-#### Environment
+### 4.1 Environment
 
 ```
 [Key Libraries]
@@ -84,11 +82,11 @@ GPU : NVIDIA RTX 3050 Laptop GPU (VRAM 4 GB)
 RAM : 32 GB
 ```
 
-#### Process Pipeline
+### 4.2 Process Pipeline
 
 `Grayscale` ➔ `Blurring` ➔ `Sharpening` ➔ `Thresholding` ➔ `Morphology` ➔ `Contour & Bounding Box (Detection)`
 
-#### Process Visualization
+### 4.3 Process Visualization
 
 **1. Grayscale**
 
@@ -140,7 +138,7 @@ RAM : 32 GB
 - 검출된 contour를 기반으로 **Bounding Box**를 생성하여 결함 위치를 시각화
 - 면적이 10픽셀 이상인 결함 객체만 유효한 결함으로 판단하여 필터링
 
-#### Process Time
+### 4.4 Process Time
 
 ```
 기준: train/images/scratches/ 이미지셋 
@@ -151,12 +149,12 @@ RAM : 32 GB
  평균 FPS: 1981.56 FPS
 ```
 
-### 4.2. Approach 2: CNN-based 객체 인식 AI (모델명: YOLO)
+## 5. Approach 2: CNN-based 객체 인식 AI (모델명: YOLO)
 
 정제된 데이터를 기반으로 CNN 기반 객체 인식 AI 모델인 YOLO를 학습시켜 표면 결함의 특징을 자동으로 학습하고 검출하는 방식이다.
 모델은 이미지로부터 결함의 형태, 패턴, 질감 등의 특징(feature)을 학습하여 결함 위치를 탐지한다.
 
-#### Environment
+### 5.1 Environment
 
 ```
 [Key Libraries]
@@ -171,11 +169,11 @@ GPU : NVIDIA RTX 3050 Laptop GPU (VRAM 4 GB)
 RAM : 32 GB
 ```
 
-#### Process Pipeline
+### 5.2 Process Pipeline
 
   `Data Annotation` ➔ `Model Training` ➔ `Inference & Evaluation (Detection)`
 
-#### Process Visualization:
+### 5.3 Process Visualization:
 
 **1. Data Annotation**
 
@@ -211,7 +209,7 @@ RAM : 32 GB
 | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
 | ![alt text](assets/YOLO/pitted_surface_1.jpg) ![alt text](assets/YOLO/pitted_surface_2.jpg) | ![alt text](assets/YOLO/rolled_in_scale_11.jpg) ![alt text](assets/YOLO/rolled_in_scale_22.jpg) |
 
-#### **Process Time**
+### 5.4 **Process Time**
 
 ```
 기준: train/images/scratches/ 이미지셋 
@@ -224,7 +222,7 @@ RAM : 32 GB
 
 ---
 
-## 5. Analysis
+## 6. Analysis
 
 ### System Comparison
 
@@ -236,7 +234,7 @@ RAM : 32 GB
 | **강건성 / Robustness**                    | - 새로운 결함 유형이나 환경 변화에 대한 일반화 능력이 낮기에 환경 변화시 검출 성능이 크게 변할 수 있음 | - 다양한 데이터 학습을 통해 조명 변화, 반사, 노이즈 등 복잡한 환경에서도 비교적 안정적인 검출 가능                 |
 | **도입 비용 / Deployment Cost**            | - 별도의 학습 과정이 필요 없으며 일반 CPU 환경에서도 동작 가능하여 초기 구축 비용이 낮음               | - 모델 학습을 위한 GPU 자원, 데이터 라벨링, 추론 환경 구축 등 초기 비용이 상대적으로 높음                          |
 
-## 6. Conclusion
+## 7. Conclusion
 
 해당 프로젝트에서는 전통적인 Rule-based 영상처리 방식과 CNN-based 객체 인식 AI 방식을 각각 구현하고 성능을 비교 분석하였다. 실험 결과 다음과 같은 결론을 도출할 수 있었다.
 
@@ -254,7 +252,7 @@ RAM : 32 GB
 
 ---
 
-## 7. Future Work
+## 8. Future Work
 
 - YOLO을 활용한 Edge Device 기반 실시간 검사 시스템
 - Hybrid defect detection pipeline 구현
